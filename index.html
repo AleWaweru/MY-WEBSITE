@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e370fc6243.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel=
+    https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="style3.css"/>
+
+ 
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          to left bottom,
+          lightblue,
+          rgb(231, 199, 204),
+          lightblue
+        );
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+.topnav {
+  overflow: hidden;
+  background-color: #ea0e92;
+  position: fixed;
+  width: 100%;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+      .header {
+        background-image: url("cover3.jpg");
+        background-size: cover;
+        width: 100%;
+        padding-top: 5px;
+        height: 650px;
+      }
+      
+      .wrapper {
+        margin: 150px auto;
+        width: 100%;
+        min-height: 100vh;
+        padding: 50px 100px;
+       
+      }
+      
+
+      .wrapper h1 {
+        color: black;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+      }
+
+      .wrapper img {
+        max-width: 320px;
+        float: left;
+        border: 3px solid whitesmoke;
+        border-radius: 15px;
+        margin-right: 30px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-color: rgba(143, 142, 142, 0.3);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      }
+      .text-box h3 {
+        font-size: 20px;
+      }
+      .text-box p {
+        font-size: 15px;
+      }
+      .text-box a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        background-color: rgba(243, 9, 216, 0.3);
+        border-radius: 20px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      }
+      .text-box a:hover {
+        background-color: aqua;
+        border-radius: 20px;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+      .btn button {
+        background-color: blue; /* Green background */
+        float: right !important;
+        color: white; /* White text */
+        padding: 10px 15px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        float: right; /* Float the buttons side by side */
+        border-radius: 25px;
+      }
+      .Title {
+        color: black;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      /*  ----Services styling---*/
+      .services {
+        background-color: rgb(242, 246, 246);
+        height: 800px;
+        
+      }
+      .services h1 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        font-weight: 400;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+      }
+      .content-box {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        padding: 5px;
+        width: 26%;
+        margin: 0px 10px;
+
+        transition: 1s;
+      }
+      .column:hover {
+        transform: scale(1.2);
+        z-index: 2;
+      }
+      .column .text {
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: rgb(106, 18, 189);
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+      }
+      .column img {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: rgb(62, 60, 60);
+      }
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      /*---skills styling*/
+
+      .skills{
+        height: 400px;
+        padding-top: 10px;
+        background-color: #b2aaaa;
+        min-height: 100vh;
+        padding: 50px 100px;
+        
+      
+      }
+
+      .skills h1{
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        font-weight: 400;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+      }
+
+      /*---contact stying---*/
+      .contact_us {
+      
+        min-height: 100vh;
+        padding: 50px 100px;
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        flex-direction: column;
+        background: url();
+        background-size: cover;
+      }
+      .contact_us .content {
+        max-width: 800px;
+        text-align: center;
+      }
+      .contact_us .content h1{
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        font-weight: 400;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+      }
+      .contact_us .content p{
+        font-weight: 300;
+      }
+      .container{
+        width: 100%;
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        
+      }
+      .container .contactInfo{
+        width: 50%;
+        
+        flex-direction: column;
+      }
+      .container .contactInfo .box{
+       
+        padding: 20px 0;
+        display: flex ;
+      }
+      .container .contactInfo .box .icon{
+        min-width: 60px;
+        height: 60px;
+        background: purple;
+       display: flex;
+        justify-content: center;
+        align-items: center; 
+       border-radius: 50%;
+       font-size: 22px; 
+      }
+      .container .contactInfo .box .icon .text{
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: black;
+        flex-direction: column;
+        font-weight: 300;
+      }
+      .container .contactInfo .box .icon .text h2{
+        font-weight: 500;
+      }
+      
+
+      .contactForm{
+        width: 40%;
+        padding: 40px;
+        float: right;
+      }
+      .contactForm h2{
+        font-size: 30px;
+        color: black;
+        font-weight: 500;
+      }
+      .contactForm .inputBox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .contactForm .inputBox input,
+      .contactForm .inputBox textarea{
+        width:100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+      }
+      .contactForm .inputBox span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+      } 
+      .contactForm .inputBox input:focus ~ span,
+      .contactForm .inputBox input:valid ~ span,
+      .contactForm .inputBox textarea:focus ~ span,
+      .contactForm .inputBox textarea:valid ~ span{
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+      }
+      .contactForm .inputBox input[type="submit"]{
+        width: 100px;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+      }
+      @media(max-width:991px){
+        .contact_us{
+          padding: 50px;
+        }
+        .container{
+          flex-direction: column;
+        }
+      }
+      .container .contactInfo{
+        margin-bottom: 40px;
+      }
+      .container .contactInfo,
+      .contactForm{
+        width: 100%;
+      }
+      
+       
+       .footer{
+        background-color:rgb(165, 23, 230);
+        height: 30px;
+        position: relative;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+       
+       }
+       .footer-cont label{
+        color: aliceblue;
+        font-weight: 300;
+        font-size: 20px;
+        margin-left: 50px;
+        text-align: center;
+       }
+
+    </style>
+
+    <title>Parent Page</title>
+  </head>
+  <body>
+    <!--HEADER SECTION-->
+    <section class="navbar"  >
+      <div class="topnav" id="myTopnav">
+         <label class="logo"><img src="logo.jpg" alt="" /> </label>
+         
+         <a href="#home" class="active">Home</a>
+         <a href="#about">About</a>
+         <a href="#services">Services</a>
+         <a href="#skills">Skills</a>
+         <a href="#contact">Contact</a>
+ 
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    </section>
+
+    <!--CONTENT SECTION-->
+    <section id="home" class="content">
+      <div class="header">
+        <br /><br />
+        <h1>GEMSTONE TECHNOGLOBAL LTD.</h1>
+        <br /><br />
+
+        <h2>
+          SOFTWARE DEVELOPEMENT <br />
+          <span>COMPANY.</span>
+        </h2>
+        <br /><br />
+
+        <label style="color: blueviolet; font-size: 25px; font-weight: 400"
+          >HIRE US.</label
+        >
+      </div>
+    </section>
+    
+
+    <!--about section-->
+
+    <section class="wrapper" id="about"><br><br>
+      <h1>ABOUT US</h1>
+      <img
+        src="pexels-fauxels-3183165.jpg"
+        style="height: 300px"
+        alt=""
+      /> <br>
+      <div class="text-box">
+        <h3>
+          Gemtechnoglobal Limited is a Software
+          <span>Developement Company.</span>
+        </h3>
+
+        <p>
+          The Company was established in 2022 with the aim of solving day to day
+          IT related issues.It was build mainly focused on software development
+          technologies.So far the company has served a good number of clients,
+          who have appreciated the solution given to grow,improve and expose
+          their businesses to more customers and traffic .The company aims at
+          impproving ,promoting and supporting growth of businesses through
+          innovation.
+        </p>
+
+        <a href="#" style="float: left center">Learn More</a>
+      </div>
+    </section>
+    <br /><br />
+
+    <!--Services section-->
+
+    <section class="services" id="services">
+      <br /><br />
+     
+      <h1>OUR SERVICES</h1> <br>
+
+      <div class="content-box">
+        <div class="row">
+          <div class="column">
+            <div class="text">Web Design</div>
+            <img
+              src="Screenshot (39).png"
+              style="height: 150px"
+              width="100%"
+              alt=""
+            />
+
+            <p>
+              With an art of design we build modern websites,attractive and self
+              explanatory,We thrive at customer's satisfaction
+            </p>
+          </div>
+          <div class="column">
+            <div class="text">Advertising</div>
+            <img
+              src="digitalmarketing.jpeg"
+              style="height: 250px"
+              width="100%"
+              alt=""
+            />
+            <p>
+              We offer the best Advertising deals, popularilizing your site,blog
+              and increasing traffic for your product to sell
+            </p>
+          </div>
+          <div class="column">
+            <div class="text">Apps Development</div>
+            <img src="appdev.jpeg" width="100%" alt="" />
+            <p>
+              Through creative art,we come up with applications/systems that
+              helps manage your businesses,from property management
+              systems,HRMs,School Management System e.t.c
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--skills section-->
+    <section class="skills" id="skills">
+      <div class="w3-container">
+        <h1>OUR SKILLS</h1>
+        <h4 style="color:#12075a" >Our Development skills</h4>
+        <p>Below explains our competence in the work we do</p>
+       
+
+        <label>JAVASCRIPT
+          <div class="w3-light-grey w3-round">
+            <div class="w3-container w3-purple w3-round" style="width:70%">70%</div>
+          </div><br>
+        </label>
+        
+      <label>HTML
+        <div class="w3-light-grey w3-round-large">
+          <div class="w3-container w3-purple w3-round-large" style="width:90%">90%</div>
+        </div><br>
+      </label>
+        
+
+        <label>CSS
+          <div class="w3-light-grey w3-round-large">
+            <div class="w3-container w3-purple w3-round-large" style="width:80%">80%</div>
+          </div><br>
+        </label>
+
+        <label>PHP
+          <div class="w3-light-grey w3-round-large">
+            <div class="w3-container w3-purple w3-round-large" style="width:70%">70%</div>
+          </div><br>
+        </label>
+        
+
+        <label>REACT JS
+          <div class="w3-light-grey w3-round-large">
+            <div class="w3-container w3-purple w3-round-large" style="width:65%">65%</div>
+          </div><br>
+        </label>
+        
+
+      <label>WORDPRESS
+        <div class="w3-light-grey w3-round-xlarge">
+          <div class="w3-container w3-purple w3-round-xlarge" style="width:85%">85%</div>
+        </div>
+      </div>
+
+      </label>
+        
+
+
+    </section><br><br>
+
+    <!-----contact section---->
+    <section class="contact_us" id="contact">
+      <div class="content">
+        <h1>CONTACT US</h1>
+        <p>You can contact us through the following ways</p>
+      </div>
+        <div class="container">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h2>Address</h2>
+                <p>
+                  Kasarani Area, <br/>
+                  Nairobi.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h2>Phone</h2>
+                <p>0716570983/0718354497</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="text1">
+                <h2>Email</h2>
+                <p>info@gemtechnoglobal.co.ke / ngashalex8@gmail.com.</p>
+              </div>
+            </div>
+          
+        </div>
+
+        <div class="contactForm">
+          <form method="post" action="connectdb.php">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="fname" required="required" />
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="email" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required " name="message"></textarea>
+              <span>Type your Message...</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+        
+    
+    </section>
+    
+
+    <!--FOOTER SECTION-->
+    <section class="footer">
+      <div class="footer-cont">
+        <label for="">@copyright 2023</label>
+
+
+      </div>
+    </section>
+  </body>
+</html>
